@@ -1,4 +1,19 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<h3> LATIHAN PPM </h3>
+Bilangan 1 : <input [(ngModel)] = "bil1" type="text">
+<br/>
+Bilangan 2 : <input [(ngModel)] = "bil2" type="text">
+<br/>
+<button (click)="findResult(bil1,bil2)"> Hasil </button>
+<p> Hasil : {{hasil}} </p>
+
+<div *ngFor="let num of pola; let i=index">
+  {{num}}
+</div>
+
+<div *ngFor="let num of pola1; let i=index">
+  {{num}}
+</div>
+
+<div *ngFor="let num of bilArr1; let i=index">
+  Input ke-{{i + 1}} : {{bilArr1[i]}} dan {{bilArr2[i]}}
+</div>
