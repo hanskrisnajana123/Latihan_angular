@@ -31,8 +31,8 @@ export class AppComponent  {
       }
     }
     else{
-
-      for(var j=0;j<=5;j++){
+      var santuy = parseInt(b)
+      for(var j=0;j<=santuy;j++){
           this.Bintang1 = ""
           this.Bulat = ""
         for(var i=0;i<parseInt(b);i++){
